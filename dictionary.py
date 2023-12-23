@@ -1,4 +1,4 @@
-import numpy as np
+import sys
 import numpy as np
 
 class Dictionary:
@@ -14,6 +14,10 @@ class Dictionary:
         return self.dict[index]
     
     def get_index(self, word):
-        return np.where(self.dict == word)[0][0]
+        try:
+            return np.where(self.dict == word)[0][0]
+        except IndexError:
+            sys.stderr.write("Error: %d not found in dictionary\n", word)
+            return -1
         
 
