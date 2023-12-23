@@ -13,6 +13,7 @@ The IMDb dataset consists of movie reviews labeled as positive or negative senti
 
 ## 2. Data preprocessing
 The first real step to take is to clean our data of punctation, symbols, anything that's not forming a word. Another step is to ensure all letters are lowercase. This way we can create a dictionary, that will let us create our TF-IDF vector representations. The dictionary will map each word to a numerical value.
+Dictionary fetched from [here](https://github.com/dwyl/english-words?tab=readme-ov-file)
 
 ## 3. Tokenising
 We can use our dictionary to tokenise each review in our dataset, replacing each word by its numerical representation. From here we can create a bag of words vector for each review.
