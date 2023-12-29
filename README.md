@@ -22,3 +22,4 @@ We can use our dictionary to tokenise each review in our dataset, replacing each
 The next step is using our bag of words representation of each review into a TF-IDF representation. TF-IDF stansds for Term Frequency Inverse Document Frequency, and it measures how important a term is within a document relative to a corpus of documents. More information can be found on its [Wikipedia page](https://en.wikipedia.org/wiki/Tf%E2%80%93idf)
 
 ## 5. Building the model
+The main goal will be to have the model fully customisable, but for now we will follow the defaults from my college project. This means using sigmoid as our activation, and a binary cross-entropy loss function. 
